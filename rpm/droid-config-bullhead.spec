@@ -18,6 +18,11 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.0
 
+# Device-specific ofono configuration
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
+Obsoletes: ofono-configs-binder
+
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-bullhead.inc
 %include patterns/patterns-sailfish-device-configuration-bullhead.inc
